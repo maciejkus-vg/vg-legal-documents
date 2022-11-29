@@ -1,0 +1,17 @@
+{#---
+title: Allgemeinen Geschäftsbedingungen fur lensvision.de
+langague: de
+slug: agb
+---#}
+{% extends "terms-and-conditions/de/document.md.twig" %}
+{% set support_email = support_email | default('info-deutsch@lensvision.ch') %}
+{% block body %}
+{# {% markdown %}  #}
+# Das is ein Beispiel für eine deutsche Version der Allgemeinen Geschäftsbedingungen für lensvision.de
+{# {% endmarkdown %} #}
+Generated for company: {{ company_name }}
+
+variables dump:
+{{ dump() }}
+
+{% endblock %}
