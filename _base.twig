@@ -1,6 +1,5 @@
-{% include "_vars.twig" %}
-{% set company_name = company_name | default('Vision Group AG') %}
 {% block document %}
+    {% include "_vars.twig" %}
     {% block header %}{% include "_header.twig" %}{% endblock %}
     {% block body %}{% include "_body.twig" %}{% endblock %}
     {% block footer %}{% include "_footer.twig" %}{% endblock %}
