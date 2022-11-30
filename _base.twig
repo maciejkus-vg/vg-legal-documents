@@ -1,5 +1,8 @@
 {% block document %}
-    {% include "_vars.twig" %}
+    {% set company_name = company_name | default('Vision Group AG') %}
+    {% set phone_number = phone_number | default('+48 607 594 208') %}
+    {% set support_email = support_email | default('info@visiongroup.de') %}
+
     {% block header %}{% include "_header.twig" %}{% endblock %}
     {% block body %}{% include "_body.twig" %}{% endblock %}
     {% block footer %}{% include "_footer.twig" %}{% endblock %}
