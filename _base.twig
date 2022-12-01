@@ -2,7 +2,7 @@
     {% set company_name = company_name | default('Vision Group AG') %}
     {% set phone_number = phone_number | default('+41 234 567 89') %}
     {% set support_email = support_email | default('info@visiongroup.io') %}
-
+    {% set shop_domain = shop_domain | default('lensvision.de') %}
     {% block header %}{% include "_header.twig" %}{% endblock %}
     {% block body %}{% include "_body.twig" %}{% endblock %}
     {% block footer %}{% include "_footer.twig" %}{% endblock %}
