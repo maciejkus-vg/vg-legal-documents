@@ -1,10 +1,12 @@
 {#---
 title: Allgemeinen Geschäftsbedingungen
-langague: de
 slug: agb
 ---#}
 {% extends "terms-and-conditions/document.md.twig" %}
 {% block body %}
+shop_domain: {{ shop_domain }}
+sales_channel: {{  sales_channel }}
+lang: {{ language  }}
 {% markdown %}
 title: {{ title }}
 Allgemeine Geschäftsbedingungen und Pflichtangaben der Vision Group AG für den Onlineshop mit der Domain {{ shop_domain }}
